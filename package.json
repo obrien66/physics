@@ -1,0 +1,23 @@
+{
+  "name": "physics",
+  "version": "1.0.0",
+  "description": "Serves PDF files",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Nicholas O'Brien <nicholas.obrien@ucc.on.ca> (http://obrien.tech)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obrien66/physics.git"
+  },
+  "bugs": {
+    "url": "https://github.com/obrien66/physics/issues"
+  },
+  "homepage": "https://github.com/obrien66/physics#readme",
+  "dependencies": {
+    "dotenv": "^4.0.0"
+  }
+}
