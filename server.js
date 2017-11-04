@@ -7,6 +7,7 @@ dotenv.load()
 // if no .env port run on 8000
 var port = process.env.PORT || 8000
 var reqURL = process.env.URL || "/"
+var title = `<h1>${process.env.TITLE}</h1>` || ""
 
 // start server
 http.createServer((req, res) => {
@@ -23,7 +24,7 @@ http.createServer((req, res) => {
 				}
 				else {
 					res.writeHead(200, {"content-type": "text/html"})
-					res.write("<h1>Physics Questions</h1><ul>")
+					res.write(title + "<ul>")
 					items.map(item => {
 						res.write(`<li><a href="${reqURL + item}">${item}</a></li>`)
 					})
